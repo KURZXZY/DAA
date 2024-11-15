@@ -1,0 +1,36 @@
+@startuml
+start
+:Masuk ke Sistem;
+if (Apakah Admin?) then (ya)
+  :Lihat Dashboard Admin;
+  if (Kelola Kategori?) then (ya)
+    :Tambah/Ubah/Hapus Kategori;
+  else (tidak)
+    if (Kelola Item Menu?) then (ya)
+      :Tambah/Ubah/Hapus Item Menu;
+    else (tidak)
+      if (Tinjau Pesanan?) then (ya)
+        :Lihat dan Perbarui Status Pesanan;
+      endif
+    endif
+  endif
+else (tidak)
+  if (Apakah Pelanggan?) then (ya)
+    :Lihat Menu Berdasarkan Kategori;
+    :Pilih Item Menu;
+    :Buat Pesanan;
+    :Lakukan Pembayaran;
+    if (Pesanan Selesai?) then (ya)
+      :Lacak Status Pesanan;
+      :Beri Ulasan;
+    endif
+  else (tidak)
+    if (Apakah Koki?) then (ya)
+      :Tinjau dan Siapkan Pesanan;
+    else (tidak)
+      :Keluar;
+    endif
+  endif
+endif
+stop
+@enduml

@@ -1,0 +1,43 @@
+@startuml classroom_system
+
+left to right direction
+
+actor "Mahasiswa" as mhs
+actor "Dosen" as dosen
+actor "Admin Akademik" as admin
+
+package "Sistem Classroom" {
+    usecase "Login ke Sistem" as Login
+    usecase "Mengikuti Kuliah" as U1
+    usecase "Mengerjakan Tugas" as U2
+    usecase "Menerima Materi Kuliah" as U3
+    usecase "Memberikan Nilai" as U4
+    usecase "Melakukan Registrasi" as U5
+    usecase "Mengelola Data Mahasiswa" as U6
+    usecase "Mengelola Akun" as U7
+}
+
+mhs --> Login : "Login ke Classroom"
+mhs --> U1 : "Mengikuti Kelas"
+mhs --> U2 : "Mengumpulkan Tugas"
+mhs --> U5 : "Melakukan Registrasi"
+mhs --> U7 : "Mengelola Akun"
+
+dosen --> Login : "Login ke Classroom"
+dosen --> U3 : "Memberikan Materi"
+dosen --> U4 : "Menilai Tugas"
+dosen --> U7 : "Mengelola Akun"
+
+admin --> Login : "Login ke Sistem"
+admin --> U6 : "Mengelola Data Mahasiswa"
+admin --> U7 : "Mengelola Akun"
+
+'U1 extended features
+U1 .> U2 : <<extend>> : "Submit Tugas"
+U1 .> "Absensi Kelas" : <<extend>> : "Absensi"
+
+'U3 extended features
+U3 .> "Membagikan File" : <<extend>>
+U3 .> "Mengumumkan Tenggat Waktu" : <<extend>>
+
+@enduml

@@ -1,4 +1,3 @@
-```markdown
 # Analisa dari Company Profile dan Sistem Manajemen dalam Gym
 
 ## Pendahuluan

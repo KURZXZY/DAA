@@ -83,7 +83,7 @@ Dengan menggunakan teknologi-teknologi terdepan seperti Laravel, Bootstrap, dan 
   - Adaptasi pengguna terhadap sistem digital mungkin memerlukan edukasi tambahan.
 
 ### 2. Analisis Kompetitif:
-Artisan Gym bersaing dengan aplikasi manajemen gym lainnya seperti **GymMaster** dan **Mindbody**. Keunggulan Artisan Gym adalah penggunaan Laravel 10 yang memungkinkan fleksibilitas dan keamanan tinggi, serta dukungan penuh untuk pembayaran otomatis melalui Duitku. Namun, aplikasi ini harus terus berinovasi untuk menghadapi pesaing yang memiliki lebih banyak integrasi dan fitur premium.
+Artisan Gym bersaing dengan aplikasi manajemen gym lainnya seperti **GymMaster** dan **Mindbody**. Keunggulan Artisan Gym adalah penggunaan Laravel 11 yang memungkinkan fleksibilitas dan keamanan tinggi, serta dukungan penuh untuk pembayaran otomatis melalui Duitku. Namun, aplikasi ini harus terus berinovasi untuk menghadapi pesaing yang memiliki lebih banyak integrasi dan fitur premium.
 
 ### 3. Analisis Kebutuhan Pasar:
 Berdasarkan tren industri kebugaran, banyak pemilik gym mulai beralih ke solusi digital untuk mengelola anggota dan operasional mereka. Fitur utama seperti pembayaran otomatis, monitoring aktivitas anggota, serta komunikasi antara pelatih dan anggota sangat dibutuhkan untuk meningkatkan efisiensi dan pengalaman pengguna. Dengan demikian, **Artisan Gym** memiliki potensi besar untuk menjadi solusi utama bagi pemilik gym yang ingin mengoptimalkan manajemen bisnis mereka.
